@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2AA92EF-1C66-4100-B17B-613EA7CB7BCC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RollTheCredits</RootNamespace>
+    <AssemblyName>RollTheCredits</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\WindowsDX\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\WindowsDX\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Common\CloudFiles.cs" />
+    <Compile Include="Common\CloudTypes.cs" />
+    <Compile Include="Common\CreditTypes.cs" />
+    <Compile Include="Common\ObstacleTypes.cs" />
+    <Compile Include="Common\PlatformTypes.cs" />
+    <Compile Include="Common\RectangleExtensions.cs" />
+    <Compile Include="Entities\Ball.cs" />
+    <Compile Include="Entities\Cloud.cs" />
+    <Compile Include="Entities\CreditText.cs" />
+    <Compile Include="Entities\Fonts\ACFilmstrip.cs" />
+    <Compile Include="Entities\Fonts\AdamGorry.cs" />
+    <Compile Include="Entities\Fonts\Barcode.cs" />
+    <Compile Include="Entities\Fonts\BirthdayBalloon.cs" />
+    <Compile Include="Entities\Fonts\Bones.cs" />
+    <Compile Include="Entities\Fonts\Briarwood.cs" />
+    <Compile Include="Entities\Fonts\Budmo.cs" />
+    <Compile Include="Entities\Fonts\Calculator.cs" />
+    <Compile Include="Entities\Fonts\Circus.cs" />
+    <Compile Include="Entities\Fonts\Crystalline.cs" />
+    <Compile Include="Entities\Fonts\LeafyFont.cs" />
+    <Compile Include="Entities\Fonts\MarkerFelt.cs" />
+    <Compile Include="Entities\Fonts\ObelixPro.cs" />
+    <Compile Include="Entities\Fonts\OpenSans.cs" />
+    <Compile Include="Entities\Fonts\RollandinEmilie.cs" />
+    <Compile Include="Entities\Fonts\Twister.cs" />
+    <Compile Include="Entities\Level.cs" />
+    <Compile Include="Entities\NameText.cs" />
+    <Compile Include="Entities\Fonts\Font.cs" />
+    <Compile Include="Entities\Platform.cs" />
+    <Compile Include="Entities\Question.cs" />
+    <Compile Include="Entities\Spike.cs" />
+    <Compile Include="Entities\Wall.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="NameGenerator\Names.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\StartGameScene.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BitMiracle.LibTiff.NET">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\BitMiracle.LibTiff.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="box2d">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\box2d.dll</HintPath>
+    </Reference>
+    <Reference Include="cocos2d-xna">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\cocos2d-xna.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network, Version=2011.3.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.MediaFoundation, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\SharpDX.MediaFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.RawInput, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\SharpDX.RawInput.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\SharpDX.XAudio2.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XInput, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\SharpDX.XInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zlib.net">
+      <HintPath>..\packages\Cocos2D-XNA.WindowsDX.1.3.0.2\lib\net40\zlib.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\fonts\ACFilmstrip.bmp" />
+    <Content Include="Content\sprites\carlos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\dot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\platform.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\platform_big.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\player_sprite_texture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\presstostart.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\rollthecredits.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\wall.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\wall_broken_top.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\wall_hitonce.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\wall_hitthrice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\wall_hittwice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\sprites\youwin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Game.ico" />
+    <Content Include="NameGenerator\Female.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NameGenerator\Last.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NameGenerator\Male.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NameGenerator\Full.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\fonts\OpenSans-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
